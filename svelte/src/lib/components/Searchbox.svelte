@@ -1,9 +1,7 @@
-
-
 <script context="module">
     const API = import.meta.env.VITE_API;
-    export async function load({fetch}){
-            const res = await fetch(`${API}`)
+    export async function load({ fetch }) {
+        const res = await fetch(`${API}`);
     }
 </script>
 
@@ -15,17 +13,24 @@
 </svg>
 `;
 
-    export let data;
+    export let strs;
 
-    var strs = ["abc", "def", "ghi", "jkl", "mno"];
+    strs = [
+        "abc",
+        "def",
+        "ghi",
+        "jkl",
+        "mno",
+        { name: "wor", detail: "woraza" },
+        { name: "wrars" },
+    ];
     let result;
     $: {
         result = strs.find((str) => str === q);
-        console.log(q);
     }
 </script>
 
-{result}
+{JSON.stringify(result)}
 <section>
     <input
         type="search"

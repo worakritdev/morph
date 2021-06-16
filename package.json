@@ -1,0 +1,25 @@
+{
+  "name": "morph",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "follow-redirects": "^1.14.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "dev":"yarn --cwd svelte dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/worakritdev/morph.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/worakritdev/morph/issues"
+  },
+  "homepage": "https://github.com/worakritdev/morph#readme"
+}

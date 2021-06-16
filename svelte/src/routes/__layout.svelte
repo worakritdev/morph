@@ -1,6 +1,6 @@
-<script>import "../app.postcss";</script>
+<script>
+import Sidebar from "$lib/components/Sidebar.svelte";
+import LoginUi from "$lib/templates/LoginUI.svelte";
+import "../app.postcss";</script>
 
-<body>
-    
-    <slot></slot>
-</body>
+<LoginUi></LoginUi>
